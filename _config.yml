@@ -25,7 +25,7 @@ sass:
 
 plugins:
   - jekyll-paginate
-  - jekyll/tagging
+#  - jekyll/tagging
 
 include:
   - _pages
@@ -38,9 +38,9 @@ exclude:
   - tags
 
 # Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
+#tag_page_dir:         tag
+#tag_page_layout:      tag_page
+#tag_permalink_style:  pretty
 
 # Pages path
 defaults:

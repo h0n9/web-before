@@ -241,7 +241,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   github-pages
+  jekyll
 
 BUNDLED WITH
    2.0.2

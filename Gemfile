@@ -1,3 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "github-pages", "~> 204", group: :jekyll_plugins
+gem 'bundler'
+gem 'jekyll', '~> 4.0'
+gem 'jekyll-paginate'
+gem 'jekyll-tagging'

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Very first post
+tags: [first, post, blog]
 ---
 
 I haven't written thigns on the Internet for a long time. There's not a

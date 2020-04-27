@@ -23,7 +23,7 @@ paginate:  3
 sass:
   style: compressed
 
-plugins:
+plugins_dir:
   - jekyll-paginate
   - jekyll/tagging
 

@@ -14,17 +14,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - name: Cache gems
         uses: actions/cache@v1
         with:
-          path: vendor/gems
-          key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+            ${{ runner.os }}-gems-
 
       - name: Build & Deploy to GitHub Pages
-        uses: DavidS/jekyll-deploy@master
+        uses: helaili/jekyll-action@2.0.0
         env:
-          JEKYLL_ENV: production
-          GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
